@@ -21,7 +21,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
   return ( 
     <div>
       <h1 className="text-3xl font-bold text-gray-900">{data.name}</h1>
-      <h1 className="text-3xl font-bold text-gray-900">short : {data?.short_description}</h1>
+      <h1 className="text-sm font-bold text-gray-500"> {data?.short_description}</h1>
       <div className="mt-3 flex items-end justify-between">
         <p className="text-2xl text-gray-900">
           <Currency value={data?.price} />
