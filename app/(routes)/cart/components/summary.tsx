@@ -46,8 +46,7 @@ const Summary = () => {
     window.location = response.data.url;
   }
 
-  // Handle user info input changes
-  const handleUserInfoChange = (e) => {
+  const handleUserInfoChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setUserInfo({
       ...userInfo,
