@@ -4,10 +4,12 @@ export interface Product {
   name: string;
   price: string;
   short_description: string;
+  old_price: string | undefined ;
   isFeatured: boolean;
-  size: Size?;
-  color: Color?;
+  size: Size | undefined;
+  color: Color | undefined;
   images: Image[]
+  Feedback: []
 };
 
 export interface Image {
