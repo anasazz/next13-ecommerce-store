@@ -27,12 +27,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({
     return null;
   }
 
-  const randomAvatarUrl = (username) => {
-    // You can use a service like Adorable Avatars to generate random avatars
-    const baseUrl = 'https://api.adorable.io/avatars/';
-    const size = 80; // Adjust the size as needed
-    return `https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80`;
-  };
+
 
   return (
     <div className="bg-white">
@@ -59,7 +54,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({
           
           <div className="flex items-center space-x-2">
           <div className="flex items-center ">
-              <img src={randomAvatarUrl(review.id)} alt="User Avatar" className="h-8 w-8 rounded-full" />
+              <img src={`https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80`} alt="User Avatar" className="h-8 w-8 rounded-full" />
             </div>
             <div className="text-yellow-400 flex space-x-1 items-center">
               {/* Display star icons based on review rating */}
