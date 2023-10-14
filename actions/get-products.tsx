@@ -21,16 +21,12 @@ const getProducts = async (query: Query): Promise<Product[]> => {
     },
   });
 
-  try {
     const res = await fetch(url);
     console.log("=======",res.data);
 
     return res.json();
 
-  } catch (error) {
-    console.log("=======",error);
-    
-  }
+
 
 };
 
