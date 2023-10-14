@@ -16,7 +16,7 @@ const HomePage = async () => {
         <Billboard 
           data={billboard}
         />
-        <p>here: {process.env.NEXT_PUBLIC_API_URL}</p>
+        {/* <p>here: {process.env.NEXT_PUBLIC_API_URL}</p> */}
         <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
           <ProductList title="Top Produits " items={products} />
         </div>
