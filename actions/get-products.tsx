@@ -22,8 +22,6 @@ const getProducts = async (query: Query): Promise<Product[]> => {
   });
 
     const res = await fetch(url);
-    console.log("=======",res.data);
-
     return res.json();
 
 
