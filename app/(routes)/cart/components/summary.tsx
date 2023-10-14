@@ -38,7 +38,7 @@ const Summary = () => {
 
   const onCheckout = async () => {
     // Include user info in the request
-    const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
+    const response = await axios.post(`https://octopus-app-594h8.ondigitalocean.app/api/c208efd7-54fa-44a3-b5bc-6fd23bae1737/checkout`, {
       productIds: items.map((item) => item.id),
       userInfo: userInfo, // Pass the user info here
     });
