@@ -4,6 +4,7 @@ export interface Product {
   name: string;
   price: string;
   short_description: string;
+  description: string;
   old_price: string | undefined ;
   isFeatured: boolean;
   size: Size | undefined;
